@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: row;
+}
+
+@font-face{
+	font-family: ds_digital;
+	src: url('ds_digital/DS-DIGI.TTF');
+}
+
+.ContainerElectos{
+	width: 30%;
+	height: 100vh;
+	border-right: 1px solid black;
+	text-align: center;
+	background-color: red;
+}
+
+.ContainerRight{
+	width: 70%;
+	height: 100vh;
+}
+
+.tituloEvento{
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tituloEvento > span{
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.cuerpoCronometro{
+	width: 100%;
+	height: 75%;
+}
+
+.DescripcionEvento, .nameElecto{
+	font-size: 2.1rem;
+	color: white;
+}
+
+.nameElecto{
+	margin-bottom: 1.3rem;
+}
+
+.logo_Univalle{
+	width: 8rem;
+	height: 8rem;
+}
+
+.cuerpoCronometro{
+	text-align: center;
+}
+
+.cronometroContador{
+	font-size: 22rem;
+	font-family: ds_digital;
+}
+
+.acciones{
+	width: 10rem;
+	height: 4rem;
+	background-color: transparent;
+	border: 2px solid red;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	font-size: 2rem;
+}
+
+.acciones:hover{
+	background-color: red;
+	border: none;
+	color: white;
+	transition: .5s;
+	cursor: pointer;
+	/*border: 2px solid black;*/
+}
+
+.cambioCandidatos{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nextCandidato{
+	height: 2.5rem;
+	width: 8rem;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+
+.nextCandidato:hover{
+	cursor: pointer;
+	background-color: white;
+	color: red;
+	transition: .5s;
+}
+
+.audios{
+	display: none;
+}

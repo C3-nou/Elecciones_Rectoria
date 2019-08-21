@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Candidatos a la rectoria Univalle</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div class="ContainerElectos">
+			<section>
+				<img src="img/1.png" id="imgCandidato" aria-label="1">
+			</section>
+			<span>
+				
+				<p class="nameElecto" id="nameElecto">Francisco Mejía Pardo</p>
+				<article class="DescripcionEvento">
+					<strong>Candidato a la Rectoría</strong>
+					<p>de la Universidad del Valle<p>
+					<p>2019 - 2023</p>
+				</article>
+				<div class="cambioCandidatos">
+					<button onclick="nextCandidato(-1)" class="nextCandidato">Anterior</button>
+					<button onclick="nextCandidato(1)" class="nextCandidato">Siguiente</button>
+				</div>
+			</span>
+		</div>
+
+		<div class="ContainerRight">
+			<header class="tituloEvento">
+				<img src="img/logo_Univalle.png" class="logo_Univalle">
+				<span>Presentación del plan de trabajo</span>
+			</header>
+
+			<section class="cuerpoCronometro">
+				<p class="cronometroContador" id="cronometro">10:00</p>
+				<div>
+					<button class="acciones" onclick="iniciar()">Iniciar</button>
+					<button class="acciones" onclick="reiniciar()">Reiniciar</button>
+				</div>
+
+			</section>
+		</div>
+
+		<div class="audios">
+			<audio id="2minutos" controls>
+				<source type="audio/mp3" src="audio/1.mp3">
+			</audio>
+			<audio id="1minutos" controls>
+				<source type="audio/mp3" src="audio/2.mp3">
+			</audio>
+			<audio id="0minutos" controls>
+				<source type="audio/mp3" src="audio/3.mp3">
+			</audio>
+		</div>
+
+	<script src="temporizador.js"></script>
+	<script src="candidatos.js"></script>
+</body>
+</html>
